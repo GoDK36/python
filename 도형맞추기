@@ -1,0 +1,33 @@
+import turtle as t
+
+
+n=4
+
+t.bgcolor("black")
+t.color("purple")
+t.begin_fill()
+t.speed(5)
+for x in range(n):
+    t.fd(200)
+    t.lt(360/n)
+
+t.end_fill()
+
+
+a = input('이것은 무슨 도형입니까? ')
+x = str(a)
+
+if x == ('사각형'):
+    print('정답이요!!')
+    k = input('그럼 이 사각형은 무슨 색인가요? ')
+    l = str(k)
+
+    if l == '보라색':
+        print('정답이여')
+    else:
+        print('땡!')
+else:
+    print('아니야!')
+
+
+
